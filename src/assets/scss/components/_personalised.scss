@@ -1,0 +1,127 @@
+@import 'node_modules/govuk-frontend/govuk/settings/all';
+@import 'node_modules/govuk-frontend/govuk/tools/all';
+@import 'node_modules/govuk-frontend/govuk/helpers/all';
+
+#visits {
+  display: flex;
+
+  & > * {
+    flex: 1 0 33%;
+  }
+
+  & h3 {
+    @include govuk-font(24);
+    font-weight: 400;
+  }
+}
+
+.type-of-visit > *,
+.next-visit > * {
+  margin: 0;
+}
+
+.next-visit-type,
+.next-visit-day {
+  @include govuk-font(48, 'bold');
+  margin: govuk-spacing(2) 0;
+}
+
+.next-visit-date {
+  @include govuk-font(24, 'bold');
+}
+
+.hidden-block-text {
+  display: none;
+  margin: 0 0 13px;
+}
+
+.iep-info p > span {
+  display: block;
+  font-weight: 700;
+  padding-top: govuk-spacing(1);
+}
+.iep-indicator {
+  display: inline-block;
+  width: 28.7%;
+  margin: 0 0 govuk-spacing(1);
+  padding: 0 10px;
+  text-align: center;
+  @include govuk-font(24, 'bold');
+}
+.iep-indicator::after {
+  content: '\25bc';
+  display: block;
+  text-align: center;
+}
+.iep-level {
+  color: govuk-colour('white');
+  font-weight: bold;
+  padding: govuk-spacing(2);
+  float: left;
+  width: 28.7%;
+  margin-right: govuk-spacing(2);
+  text-align: center;
+  @include govuk-font(24, 'bold');
+}
+.iep-level--basic {
+  background-color: #2b8cc4;
+}
+.iep-level--standard {
+  background-color: #28a197;
+}
+.iep-level--enhanced {
+  background-color: #6f72af;
+  margin-right: 0;
+}
+.iep-indicator--standard {
+  margin-left: calc(28.7% + 30px);
+}
+.iep-indicator--enhanced {
+  margin-left: calc(57.4% + 60px);
+}
+.iepReview {
+  @include govuk-font(24);
+
+  & > span {
+    font-weight: 700;
+  }
+}
+
+#money > h2 {
+  @include govuk-font(24);
+}
+.balances {
+  @include govuk-font(24, 'bold');
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: govuk-spacing(5);
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 66%;
+  }
+
+  & > * {
+    flex: 1 0 25%;
+  }
+
+  & p,
+  & button {
+    margin: 0;
+  }
+
+  & > div {
+    padding-right: govuk-spacing(5);
+
+    & > button {
+      width: 100%;
+    }
+
+    & > p {
+      outline: 1px solid grey;
+      text-align: right;
+      padding: 4px govuk-spacing(1) 4px 0;
+    }
+  }
+}

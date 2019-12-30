@@ -1,0 +1,42 @@
+@import 'node_modules/govuk-frontend/govuk/settings/all';
+@import 'node_modules/govuk-frontend/govuk/tools/all';
+@import 'node_modules/govuk-frontend/govuk/helpers/all';
+@import 'node_modules/govuk-frontend/govuk/helpers/typography';
+
+.notification {
+  @include govuk-font($size: 19, $weight: 'bold');
+  color: govuk-colour('white');
+  background-color: govuk-colour('blue');
+  line-height: 1.25;
+  box-sizing: border-box;
+  border: 5px solid transparent;
+  text-align: center;
+  display: block;
+  margin: govuk-spacing(4) 0;
+  & p {
+    margin: govuk-spacing(4);
+  }
+}
+
+.notification--three-quarters {
+  margin: govuk-spacing(4) 0;
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0;
+    margin-bottom: govuk-spacing(4);
+    width: 75%;
+  }
+}
+
+.notification--is-error {
+  background-color: $govuk-error-colour;
+}
+
+.notification--is-success {
+  background-color: govuk-colour('green');
+}
+
+.notification__close {
+  @include govuk-font($size: 16, $weight: 'bold');
+  display: block;
+  float: right;
+}
