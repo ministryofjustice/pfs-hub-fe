@@ -1,14 +1,28 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
+import PopularTopics from '../components/PopularTopics'
 
 export default () => {
     return (
       <>
-        <Helmet>
-          <body className="govuk-template__body" />
-        </Helmet>
-        <Layout><div>Hello world!</div></Layout>
+        <Layout>
+        <div className="govuk-width-container home-navigation govuk-!-margin-top-3">
+          <div className="home-navigation__actions">
+            <div>
+              <div className="govuk-clearfix home-navigation__search">
+                
+              </div>
+              <a href="/topics" role="button" draggable="false" className="govuk-button govuk-button--start" data-module="govuk-button">
+                Browse all topics
+                <svg className="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                  <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                </svg>
+              </a>
+            </div>
+            <PopularTopics />
+          </div>
+        </div>
+        </Layout>
       </>
     )
 }
