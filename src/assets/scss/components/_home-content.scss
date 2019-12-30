@@ -222,11 +222,11 @@
 }
 
 .content-link--article::before {
-  content: url('/public/images/icons/read.svg');
+  content: url('../images/icons/read.svg');
   background-color: govuk-colour('blue');
 }
 
 .content-link--audio::before {
-  content: url('/public/images/icons/audio.svg');
+  content: url('../images/icons/audio.svg');
   background-color: govuk-colour('green');
 }

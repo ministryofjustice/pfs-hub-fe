@@ -2,11 +2,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import Clock from './Clock'
+import PageNavigation from '../components/PageNavigation'
 
 import '../assets/scss/index.scss'
 import contentHubImage from '../assets/images/icons/content-hub.png'
 
-const Layout = ({ children }) => {
+const Layout = ({ blueBar, pageNavigation, children }) => {
   return (
     <>
       <Helmet>
@@ -22,9 +23,14 @@ const Layout = ({ children }) => {
           <Clock />
         </div>
       </header>
+      {blueBar &&
       <div className="govuk-width-container">
         <hr className="govuk-section-break govuk-search-section-break--visible" />
       </div>
+      }
+      {pageNavigation &&
+      <PageNavigation />
+      }
       {children}
       <footer className="govuk-footer" role="contentinfo">
         <div className="govuk-width-container ">
@@ -45,7 +51,14 @@ const Layout = ({ children }) => {
   )
 }
 
+Layout.defaultProps = {
+  blueBar: false,
+  pageNavigation: true,
+}
+
 Layout.propTypes = {
+  blueBar: PropTypes.bool,
+  pageNavigation: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 

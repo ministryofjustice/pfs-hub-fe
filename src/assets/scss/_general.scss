@@ -48,22 +48,22 @@
 }
 
 .govuk-hub-thumbs--up {
-  background-image: url('/public/images/icon-thumbs/thumbs-up-white.svg');
+  background-image: url('../images/icon-thumbs/thumbs-up-white.svg');
   background-color: transparent;
 }
 
 .govuk-hub-thumbs--up:focus {
-  background-image: url('/public/images/icon-thumbs/thumbs-up-black.svg');
+  background-image: url('../images/icon-thumbs/thumbs-up-black.svg');
 }
 
 .govuk-hub-thumbs--down {
-  background-image: url('/public/images/icon-thumbs/thumbs-down-white.svg');
+  background-image: url('../images/icon-thumbs/thumbs-down-white.svg');
   background-color: transparent;
   margin-top: 12px;
 }
 
 .govuk-hub-thumbs--down:focus {
-  background-image: url('/public/images/icon-thumbs/thumbs-down-black.svg');
+  background-image: url('../images/icon-thumbs/thumbs-down-black.svg');
 }
 
 .govuk-u-hidden {
@@ -115,19 +115,19 @@
 .feedback-tablet .govuk-hub-thumbs--up,
 .help-container .govuk-hub-thumbs--up,
 .govuk-hub-article-feedback .govuk-hub-thumbs--up {
-  background-image: url('/public/images/icon-thumbs/thumbs-up-grey.svg');
+  background-image: url('../images/icon-thumbs/thumbs-up-grey.svg');
 }
 
 .feedback-tablet .govuk-hub-thumbs--down,
 .help-container .govuk-hub-thumbs--down,
 .govuk-hub-article-feedback .govuk-hub-thumbs--down {
-  background-image: url('/public/images/icon-thumbs/thumbs-down-grey.svg');
+  background-image: url('../images/icon-thumbs/thumbs-down-grey.svg');
 }
 
 .govuk-hub-thumbs--down.is-selected {
-  background-image: url('/public/images/icon-thumbs/thumbs-down-selected.svg');
+  background-image: url('../images/icon-thumbs/thumbs-down-selected.svg');
 }
 
 .govuk-hub-thumbs--up.is-selected {
-  background-image: url('/public/images/icon-thumbs/thumbs-up-selected.svg');
+  background-image: url('../images/icon-thumbs/thumbs-up-selected.svg');
 }
