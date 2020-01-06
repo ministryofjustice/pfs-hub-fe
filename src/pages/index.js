@@ -1,16 +1,17 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import PopularTopics from '../components/PopularTopics'
+import Searchbox from '../components/Searchbox'
 
 export default () => {
     return (
       <>
-        <Layout>
+        <Layout blueBar pageNavigation={false}>
         <div className="govuk-width-container home-navigation govuk-!-margin-top-3">
           <div className="home-navigation__actions">
             <div>
               <div className="govuk-clearfix home-navigation__search">
-                
+                <Searchbox large />
               </div>
               <a href="/topics" role="button" draggable="false" className="govuk-button govuk-button--start" data-module="govuk-button">
                 Browse all topics
