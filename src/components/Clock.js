@@ -31,7 +31,7 @@ class Clock extends React.Component {
 
     render() {
         return (
-        <div class="top-bar-time">
+        <div className="top-bar-time">
             <span>{this.state.dateString}</span>
             <span>{this.state.timeString}</span>
         </div>
