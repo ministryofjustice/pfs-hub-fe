@@ -2,6 +2,17 @@ import React from 'react'
 import Layout from '../components/Layout'
 import PopularTopics from '../components/PopularTopics'
 import Searchbox from '../components/Searchbox'
+import MediaPlayer from '../components/MediaPlayer'
+
+const videoJsOptions = {
+  autoplay: false,
+  controls: true,
+  responsive: true,
+  sources: [{
+    src: 'https://drupal.digital-hub-stage.hmpps.dsd.io/sites/default/files/videos/2019-10/Nathan%27s%20Story.mp4',
+    type: 'video/mp4'
+  }]
+}
 
 export default () => {
     return (
@@ -22,6 +33,7 @@ export default () => {
             </div>
             <PopularTopics />
           </div>
+          <MediaPlayer { ...videoJsOptions } />
         </div>
         </Layout>
       </>
